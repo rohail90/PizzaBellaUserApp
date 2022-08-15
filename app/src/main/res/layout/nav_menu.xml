@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nav_pizza_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:visibility="visible">
+
+           <!-- <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_ic" />-->
+
+            <ImageView
+                android:id="@+id/iv_remove"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/menu_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/iv_remove"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Pizza Menu"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:visibility="visible">
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/nav_create_pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_pizza" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Create Your Pizza"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_order_combos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_order_combos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Order Combos"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/nav_order_sidelines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_order_combos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Order Sidelines"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_my_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_myorders" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="My Orders"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nav_my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="My Profile"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_my_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="My Addresses"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nav_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_change_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Change Password"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_share_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_baseline_share_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Share App"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_baseline_privacy_tip_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Privacy Policy"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nav_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_mapview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Map View"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nav_contactus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_contactus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Contact Us"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nav_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:text="Logout"
+                android:textColor="#3d4144"
+                android:textSize="14.7sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

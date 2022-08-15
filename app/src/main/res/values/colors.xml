@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#FF1E00</color>
+    <color name="colorAccent">#FF3300</color><!--<color name="colorAccent">#03DAC5</color>-->
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FBEF02</color>
+    <color name="red">#FF3300</color>
+    <color name="light_grey">#dcdcdc</color>
+
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="yellowColor">#DCA605</color>
+    <color name="orangeColor">#FF5722</color>
+    <color name="greyColor">#888585</color>
+    <color name="blackColor">#000000</color>
+    <color name="black_transparent">#59000000</color>
+    <color name="banner_background">#F4F3F3</color>
+    <color name="green">#179F1C</color>
+
+
+    <color name="firstCircleColor">#FF3300</color>
+    <color name="secondCircleColor">#D2FF3300</color>
+    <color name="fourthCircleColor">#ABFF3300</color>
+    <color name="fifthCircleColor">#70FF3300</color>
+
+    <color name="black_90">#E6000000</color>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cl_sub_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/additional_price_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="8dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp"
+        android:text="Additional Price"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_additional_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="299.0"
+        android:textColor="@color/greyColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checked"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toEndOf="@+id/additional_price_tag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/checked"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        app:tint="@color/green"
+        android:src="@drawable/email_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

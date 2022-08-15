@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="10"
+    android:paddingBottom="0dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:gravity="center_vertical"
+        android:id="@+id/topbar"
+        android:background="@color/yellow"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/side_menu"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@mipmap/menu_icon"
+                android:padding="8dp"
+                android:layout_marginStart="5dp"
+                app:tint="@color/orangeColor" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Main Activity"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="@font/josefinsans_regular_login"
+            android:textAllCaps="false"
+            android:textColor="@color/orangeColor"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            >
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                >
+                <ImageView
+                    android:id="@+id/iv_notification_orange"
+                    android:layout_width="42dp"
+                    android:layout_height="47dp"
+                    android:src="@mipmap/cart_icon"
+                    android:padding="7dp"
+                    app:tint="@color/orangeColor" />
+                <TextView
+                    android:id="@+id/tv_cart_count"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:text="0"
+                    android:textSize="11sp"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/whiteColor"
+                    android:background="@mipmap/white_borderd_red_circle"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/sliding_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#dcdcdc"
+                app:tabIndicatorHeight="2dp"
+                app:tabTextColor="#b3ffffff"
+                app:tabSelectedTextColor="#ffffff"
+                app:tabMode="scrollable"
+                android:background="@color/orangeColor"
+                />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whiteColor"
+                android:id="@+id/pager"/>
+        </LinearLayout>
+        <FrameLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

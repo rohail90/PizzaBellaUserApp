@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="10"
+    android:paddingBottom="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:id="@+id/name"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/greyColor"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/calibri"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:id="@+id/email"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/calibri"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:inputType="textWebEmailAddress"
+            android:textColorHint="@color/greyColor"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="15dp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:id="@+id/subject"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:fontFamily="@font/calibri"
+            android:inputType="text"
+            android:textColorHint="@color/greyColor"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="15dp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:hint="@string/message"
+            android:id="@+id/message"
+            android:gravity="start"
+            android:imeOptions="actionNext"
+            android:padding="7dp"
+            android:textSize="18sp"
+            android:background="@drawable/placeorder_shape"
+            android:inputType="text|textMultiLine"
+            android:fontFamily="@font/calibri"
+            android:lines="30"
+            android:minLines="5"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:textColorHint="@color/greyColor"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendEmail"
+            android:textColor="@color/orangeColor"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/calibri"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:text="Send Email"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

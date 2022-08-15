@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/simple_border_shape"
+    android:padding="5dp"
+    android:id="@+id/ll_topping_item"
+    android:layout_margin="5dp"
+android:gravity="center"
+    >
+   <TextView
+       android:id="@+id/name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/abrilfatface_regular_maintitle"
+       android:layout_marginStart="5dp"
+       android:padding="2dp"
+       android:text="Premium Flavors "
+       android:textAlignment="center"
+       android:textAllCaps="false"
+       android:tag="YES"
+       android:textColor="@color/blackColor"
+       android:textSize="13sp" />
+</LinearLayout>

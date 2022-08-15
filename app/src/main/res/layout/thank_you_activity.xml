@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refreshFood"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:gravity="center_vertical"
+        android:id="@+id/topbar"
+        android:background="@color/yellow"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon"
+            android:padding="3dp"
+            android:layout_marginStart="5dp"
+            app:tint="@color/orangeColor"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="@font/josefinsans_semibold_login"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:textColor="@color/orangeColor"
+            android:id="@+id/toolbarTitle"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abrilfatface_regular_maintitle"
+       android:layout_marginBottom="15dp"
+        android:padding="7dp"
+        android:text="Thank you for your order!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="24sp" />
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri"
+                android:padding="2dp"
+                android:text="Your total order amount is"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/blackColor"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri"
+                android:padding="2dp"
+                android:text="RS. 645"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:id="@+id/reOrderTV"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:text="You will receive a confirmation call shortly."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/blackColor"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:text="Based on your location delivery charges may apply and will be communicated to you on confirmation call."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/blackColor"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:layout_marginTop="25dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:text="Create Another Pizza"
+            android:textAlignment="center"
+            android:background="@drawable/button_background"
+            android:textAllCaps="false"
+            android:id="@+id/createOtherPizzaTV"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="    View Your Order    "
+            android:background="@drawable/button_background"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:id="@+id/viewYourOrderTV"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

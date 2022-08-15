@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edittext_shape"
+    android:padding="5dp"
+android:gravity="center"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginTop="10dp">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="0.7"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_bold"
+          android:layout_marginStart="5dp"
+          android:padding="2dp"
+          android:text="Status"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/blackColor"
+          android:textSize="14sp" />
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="2.5"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/open_sans_bold_italic"
+             android:layout_marginStart="5dp"
+             android:padding="5dp"
+             android:text="Pending"
+             android:id="@+id/orderStatus"
+            android:textAlignment="textStart"
+             android:textAllCaps="false"
+             android:textColor="@color/red"
+             android:textSize="13sp" />
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginTop="5dp">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="0.7"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_bold"
+          android:layout_marginStart="5dp"
+          android:padding="2dp"
+          android:text="Name"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/blackColor"
+          android:textSize="14sp" />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="2.5"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_bold_italic"
+          android:layout_marginStart="5dp"
+          android:padding="5dp"
+          android:text="User name"
+          android:id="@+id/userName"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/red"
+          android:textSize="13sp" />
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginTop="5dp">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="0.7"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_bold"
+          android:layout_marginStart="5dp"
+          android:padding="2dp"
+          android:text="Contact"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/blackColor"
+          android:textSize="14sp" />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="2.5"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_bold_italic"
+          android:layout_marginStart="5dp"
+          android:padding="5dp"
+          android:text="03330000000"
+          android:id="@+id/userContact"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/red"
+          android:textSize="13sp" />
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginTop="5dp">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="0.7"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_bold"
+          android:layout_marginStart="5dp"
+          android:padding="2dp"
+          android:text="Address"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/blackColor"
+          android:textSize="14sp" />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="2.5"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_bold_italic"
+          android:layout_marginStart="5dp"
+          android:padding="5dp"
+          android:text="sds,fsdf,fdsf"
+          android:id="@+id/userAddress"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/red"
+          android:textSize="13sp" />
+
+   </LinearLayout>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/open_sans_extra_bold"
+       android:layout_margin="15dp"
+       android:padding="7dp"
+       android:text="REORDER"
+       android:background="@drawable/red_filled_shape"
+       android:textAlignment="center"
+       android:textAllCaps="false"
+       android:id="@+id/reOrderTV"
+       android:textColor="@color/whiteColor"
+       android:textSize="16sp" />
+
+</LinearLayout>

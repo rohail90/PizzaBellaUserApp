@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="LoginViewModel"
+            type="com.orderpizaonline.pizzabella.viewmodels.LoginViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_screen"
+        android:padding="5dp"
+        tools:context=".View.LoginActivity">
+
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefinsans_semibold_login"
+            android:padding="5dp"
+            android:text="Skip"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.525"
+            app:srcCompat="@drawable/app_icon_round" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.34" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:text="LOGIN"
+            android:textColor="@color/red"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:srcCompat="@drawable/call_icon"
+            app:tint="@color/red" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edittext_shape"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.49">
+
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="+92"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="#EEF3F9"
+                android:ems="10"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@={LoginViewModel.PhoneNumber}" />
+
+        </LinearLayout>
+        <!--<TextView
+            android:id="@+id/tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+92"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline34"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.65"/>
+-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.14" />
+        <!--
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/josefinsans_regular_login"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:text="@={LoginViewModel.PhoneNumber}"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline34"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.49" />-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:srcCompat="@drawable/lock_icon"
+            app:tint="@color/red" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/edittext_shape"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintVertical_bias="0.49"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:password="true"
+                android:text="@={LoginViewModel.Password}"
+                android:textSize="17sp"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/josefinsans_regular_login"
+            android:hint="Password"
+            android:inputType="textWebPassword"
+            android:padding="10dp"
+            android:text="@={LoginViewModel.Password}"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintVertical_bias="0.49" />-->
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/josefinsans_semibold_login"
+            android:text="Forgot password?"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/josefinsans_regular_login"
+            android:onClick="@{(v) -> LoginViewModel.onClick(v)}"
+            android:paddingStart="35dp"
+            android:paddingEnd="35sp"
+            android:shadowColor="#00FFFFFF"
+            android:text="Login Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/facebook_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/facebook_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/fb_shape"
+            app:layout_constraintBottom_toTopOf="@+id/guideline38"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:padding="10dp"
+                android:text="With Facebook"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/imageViewicon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/facebook"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/google_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/google_shape"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_google"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:padding="10dp"
+                android:text="With Google"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView33"
+                app:layout_constraintStart_toEndOf="@+id/imageViewicon1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewicon1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/google"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/email_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/email_shape"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/google_layout">
+
+            <TextView
+                android:id="@+id/editTextName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/josefinsans_regular_login"
+                android:padding="10dp"
+                android:text="With Facebook"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView32"
+                app:layout_constraintStart_toEndOf="@+id/imageViewicon2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewicon2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/email_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/email_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/black" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.86" />
+
+
+        <TextView
+            android:id="@+id/textView455"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/josefinsans_semibold_login"
+            android:text="Don't Have An Account?"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/josefinsans_semibold_login"
+            android:text="Sign Up"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView455" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.24817519" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.77" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

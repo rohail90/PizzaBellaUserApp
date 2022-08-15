@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="10"
+    android:paddingBottom="5dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:fontFamily="@font/abrilfatface_regular_maintitle"
+        android:text="Add New Address"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/blackColor"
+        android:textSize="22sp" />
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/calibri"
+        android:padding="5dp"
+        android:text="Add New Address"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/blackColor"
+        android:textSize="22sp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House No"
+            android:id="@+id/houseNo"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/calibri"
+            android:textColorHint="@color/greyColor"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street"
+            android:id="@+id/street"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:inputType="text"
+            android:fontFamily="@font/calibri"
+            android:textColorHint="@color/greyColor"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area"
+            android:id="@+id/area"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:fontFamily="@font/calibri"
+            android:inputType="text"
+            android:textColorHint="@color/greyColor"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveAddressBtn"
+            android:fontFamily="@font/calibri"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp"
+            android:layout_gravity="end"
+            android:textColor="@color/orangeColor"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:text="Save Address"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

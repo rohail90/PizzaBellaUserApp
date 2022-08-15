@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/simple_border_shape">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Coke"
+    android:padding="10dp"
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    android:id="@+id/cokeTv"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/light_grey"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sprite"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/spriteTv"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/light_grey"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fanta"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/fantaTv"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/light_grey"/>
+</LinearLayout>

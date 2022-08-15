@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:padding="5dp"
+    android:background="@color/white"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            >
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="visible"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/pizzaRecyclerview"/>
+            <TextView
+                android:id="@+id/tv_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="20sp"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/red"
+                android:fontFamily="@font/frederickathegreat_regular_blurr"
+                android:text="You Don't Have Any Previous Orders"
+                />
+
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="#ffffff"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="40dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#6DDDDBDB">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frederickathegreat_regular_blurr"
+                    android:text="1."
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/orangeColor"
+                    android:textSize="22sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abrilfatface_regular_maintitle"
+                    android:layout_marginStart="5dp"
+                    android:text=" Select Sidelines"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blackColor"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sidelinesRecyclerview"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#6DDDDBDB">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frederickathegreat_regular_blurr"
+                    android:text="2."
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/orangeColor"
+                    android:textSize="22sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abrilfatface_regular_maintitle"
+                    android:layout_marginStart="5dp"
+                    android:text=" Select Desserts"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blackColor"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dessertsRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/rl_price"
+        android:background="@color/light_grey"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="3dp"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back_icon"/>
+        <ImageView
+            android:id="@+id/iv_forward"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/forward_icon"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/frederickathegreat_regular_blurr"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:text="Rs.0"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/orangeColor"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

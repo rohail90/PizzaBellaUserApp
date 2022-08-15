@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/ll_piiza_info_item"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp">
+   <RelativeLayout
+       android:visibility="gone"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/rl_full_circle">
+
+      <ImageView
+          android:id="@+id/destination"
+          android:layout_width="180dp"
+          android:layout_height="180dp"
+          android:layout_centerVertical="true"
+          android:visibility="visible"
+          android:scaleType="fitXY"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/pizza_full_circle"
+          android:background="@drawable/pizza_full_circle"
+          android:tag="Destination"
+          />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+
+          android:orientation="horizontal">
+         <ImageView
+             android:id="@+id/destination_left_full"
+             android:layout_width="90dp"
+             android:layout_height="180dp"
+             android:visibility="visible"
+             android:src="@drawable/pizza_left_half_circle"
+             android:background="@drawable/pizza_left_half_circle"
+             android:tag="Destination"
+             />
+         <ImageView
+             android:id="@+id/destination_right_full"
+             android:layout_width="90dp"
+             android:layout_height="180dp"
+             android:visibility="visible"
+             android:src="@drawable/pizza_right_half_circle"
+             android:background="@drawable/pizza_right_half_circle"
+             android:tag="Destination"
+             />
+      </LinearLayout>
+
+      <!--   <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true">
+             <TextView
+                 android:id="@+id/tv_left_half"
+                 android:layout_width="90dp"
+                 android:layout_height="180dp"
+                 android:scaleType="fitXY"
+                 android:text=""
+                 android:layout_centerVertical="true"
+                 android:tag="Destination"
+                 />
+             <ImageView
+                 android:id="@+id/tv_right_half"
+                 android:layout_width="90dp"
+                 android:layout_height="180dp"
+                 android:layout_centerVertical="true"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/pizza_right_half_circle"
+                 android:background="@drawable/pizza_right_half_circle"
+                 android:tag="Destination"
+                 />
+         </LinearLayout>-->
+   </RelativeLayout>
+
+      <RelativeLayout
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/rl_full_square"
+          >
+
+         <ImageView
+             android:id="@+id/square_destination"
+             android:layout_width="180dp"
+             android:layout_height="180dp"
+             android:layout_centerVertical="true"
+             android:visibility="visible"
+             android:scaleType ="fitXY"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/pizza_full_square"
+             android:background="@drawable/pizza_full_square"
+             android:tag="Destination"
+             />
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true"
+
+             android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/square_destination_left_full"
+                android:layout_width="90dp"
+                android:layout_height="180dp"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_half_square_simple"
+                android:background="@drawable/pizza_half_square_simple"
+                android:tag="Destination"
+                />
+            <ImageView
+                android:id="@+id/square_destination_right_full"
+                android:layout_width="90dp"
+                android:layout_height="180dp"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_half_square_simple"
+                android:background="@drawable/pizza_half_square_simple"
+                android:tag="Destination"
+                />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_centerHorizontal="true"
+             android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/square_destination_left_top_full"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_half_square_simple"
+                android:background="@drawable/pizza_half_square_simple"
+                android:tag="Destination"
+                />
+            <ImageView
+                android:id="@+id/square_destination_right_top_full"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_half_square_simple"
+                android:background="@drawable/pizza_half_square_simple"
+                android:tag="Destination"
+                />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_centerHorizontal="true"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="10dp"
+             android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/square_destination_left_bottom_full"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_half_square_simple"
+                android:background="@drawable/pizza_half_square_simple"
+                android:tag="Destination"
+                />
+            <ImageView
+                android:id="@+id/square_destination_right_bottom_full"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_half_square_simple"
+                android:background="@drawable/pizza_half_square_simple"
+                android:tag="Destination"
+                />
+         </LinearLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:id="@+id/rl_semi_circle"
+          >
+
+         <ImageView
+             android:id="@+id/semi_circle_destination"
+             android:layout_width="180dp"
+             android:layout_height="90dp"
+             android:scaleType="fitXY"
+             android:layout_centerVertical="true"
+             android:visibility="visible"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/pizza_half_circle"
+             android:background="@drawable/pizza_half_circle_simple"
+             android:tag="Destination"
+             />
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true"
+
+             android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/semi_destination_left_full"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:visibility="visible"
+                android:src="@drawable/quarter_left_circle"
+                android:background="@drawable/quarter_left_circle"
+                android:tag="Destination"
+                />
+            <ImageView
+                android:id="@+id/semi_destination_right_full"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:visibility="visible"
+                android:src="@drawable/quarter_right_circle"
+                android:background="@drawable/quarter_right_circle"
+                android:tag="Destination"
+                />
+         </LinearLayout>
+
+
+      </RelativeLayout>
+      <RelativeLayout
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/rl_slice"
+          >
+
+         <ImageView
+             android:id="@+id/slice_destination"
+             android:layout_width="120dp"
+             android:layout_height="180dp"
+             android:scaleType="fitXY"
+             android:layout_centerVertical="true"
+             android:visibility="visible"
+             android:layout_centerHorizontal="true"
+             android:tag="Destination"
+             />
+
+         <ImageView
+             android:id="@+id/slice_destination_full"
+             android:layout_width="180dp"
+             android:scaleType="fitXY"
+             android:layout_height="180dp"
+             android:layout_marginTop="10dp"
+             android:visibility="visible"
+             android:layout_centerHorizontal="true"
+             android:tag="Destination"
+             />
+
+      </RelativeLayout>
+
+   </RelativeLayout>
+      <ImageView
+          android:id="@+id/iv_delete"
+          android:layout_width="28dp"
+          android:layout_height="32dp"
+          android:layout_gravity="end"
+          android:src="@mipmap/delete_icon"
+          app:tint="@color/orangeColor" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="4dp"
+          android:layout_marginTop="3dp"
+          android:orientation="horizontal">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="3"
+             android:text="Details"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:textColor="@color/blackColor"
+             android:orientation="vertical"/>
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Price"
+             android:textAlignment="center"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:textColor="@color/blackColor"
+             android:layout_marginStart="4dp"
+             android:orientation="vertical"/>
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1.2"
+             android:text="Quantity"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:paddingTop="2dp"
+             android:textAlignment="center"
+             android:paddingBottom="2dp"
+             android:textColor="@color/blackColor"
+             android:layout_marginStart="4dp"
+             android:orientation="vertical"/>
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Total"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:textColor="@color/blackColor"
+             android:layout_marginStart="4dp"
+             android:textAlignment="center"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/orangeColor"
+          android:layout_marginTop="2dp"
+          android:layout_marginBottom="3dp"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="4dp"
+          android:layout_marginTop="3dp"
+          android:orientation="horizontal">
+         <TextView
+             android:id="@+id/name"
+             android:layout_width="0dp"
+             android:layout_weight="3"
+             android:fontFamily="@font/frederickathegreat_regular_blurr"
+             android:text="Half of Manhatten"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:layout_height="wrap_content"
+             android:textSize="14sp"
+             android:textColor="@color/orangeColor"
+             android:orientation="vertical"/>
+
+         <TextView
+             android:id="@+id/price"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="1,349"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:textAlignment="center"
+             android:textColor="@color/blackColor"
+             android:layout_marginStart="4dp"/>
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight="1.2"
+             android:layout_height="wrap_content"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:gravity="center"
+             android:layout_marginStart="4dp">
+            <ImageView
+                android:id="@+id/iv_minus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/remove_icon"
+                android:padding="3dp"
+                app:tint="@color/orangeColor" />
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:maxLines="2"
+                android:maxLength="5"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:fontFamily="@font/calibri"
+                android:textAllCaps="false"
+                android:textColor="@color/blackColor"
+                />
+            <ImageView
+                android:id="@+id/iv_plus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/add_icon"
+                android:padding="3dp"
+                app:tint="@color/orangeColor" />
+         </LinearLayout>
+
+         <TextView
+             android:id="@+id/totalPrice"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="1349"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:textColor="@color/orangeColor"
+             android:layout_marginStart="4dp"
+             android:textAlignment="center"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/blackColor"
+          android:layout_marginTop="1dp"
+          android:layout_marginBottom="5dp"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@drawable/black_bordered_shape">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="4dp"
+             android:layout_marginTop="3dp"
+             android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Pizza"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+
+            <TextView
+                android:id="@+id/tv_piiza_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:maxLines="2"
+                android:text="Half of Manhattan"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/blackColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:visibility="gone"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="4dp"
+             android:visibility="gone"
+
+             android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Dough"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_dough_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Whole wheat"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="4dp"
+             android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="Crust Filling"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_crust_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Special"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/blackColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:visibility="gone"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:visibility="gone"
+             android:layout_marginStart="4dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Pizza Souce"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_sauce_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="Thousand Island"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:visibility="gone"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:visibility="gone"
+             android:layout_marginStart="4dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Spice Level"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_spice_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Hot"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:id="@+id/ll_top"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@+id/ll_toppings"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginStart="4dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Topping"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_topping_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Chicken Tikka"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:id="@+id/ll_veg"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@+id/ll_vagetables"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:orientation="horizontal"
+             android:layout_marginStart="4dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Veggies"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_vegetables_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Tomato,Onion, Capsicum, Black Olive,Jalapeno"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/blackColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:id="@+id/ll_a"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@+id/slice_one"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:layout_marginStart="4dp"
+             android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_sliceOne_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Slice1"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="2dp"
+                   android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Toppings"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:orientation="vertical"/>
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Veggies"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/orangeColor"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="3dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:orientation="horizontal">
+                  <TextView
+                      android:id="@+id/tv_sliceOne_toppings_name"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Beef ,Pepperoni"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/blackColor"
+                      android:orientation="vertical"/>
+
+                  <TextView
+                      android:id="@+id/tv_sliceOne_toppings_vegeis"
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Tomato,Onion, Capsicum, Black Olive,"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/blackColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+
+
+            </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/ll_b"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@+id/slice_two"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="4dp"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_sliceTwo_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Slice1"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="2dp"
+                   android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Toppings"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:orientation="vertical"/>
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Veggies"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/orangeColor"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="3dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:orientation="horizontal">
+                  <TextView
+                      android:id="@+id/tv_sliceTwo_toppings_name"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Beef ,Pepperoni"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/blackColor"
+                      android:orientation="vertical"/>
+
+                  <TextView
+                      android:id="@+id/tv_sliceTwo_toppings_vegeis"
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Tomato,Onion, Capsicum, Black Olive,"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/blackColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+
+
+            </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/ll_c"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@+id/slice_three"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:layout_marginStart="4dp"
+             android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_sliceThree_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Slice1"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Toppings"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:orientation="vertical"/>
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Veggies"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/orangeColor"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="3dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+                     <TextView
+                         android:id="@+id/tv_sliceThree_toppings_name"
+                         android:layout_width="match_parent"
+                         android:text="Beef ,Pepperoni"
+                         android:layout_height="wrap_content"
+                         android:textSize="12sp"
+                         android:textColor="@color/blackColor"
+                         android:orientation="vertical"/>
+                     <TextView
+                         android:id="@+id/tv_sliceThree_topping_price"
+                         android:layout_width="match_parent"
+                         android:text="+Rs. 100"
+                         android:layout_height="wrap_content"
+                         android:textSize="12sp"
+                         android:visibility="gone"
+                         android:textColor="@color/orangeColor"
+                         android:orientation="vertical"/>
+                  </LinearLayout>
+                  <TextView
+                      android:id="@+id/tv_sliceThree_toppings_vegeis"
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Tomato,Onion, Capsicum, Black Olive,"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/blackColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+
+
+            </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:id="@+id/ll_d"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@+id/slice_four"
+             android:layout_width="match_parent"
+             android:layout_marginStart="4dp"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_sliceFour_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Slice1"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Toppings"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:orientation="vertical"/>
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Veggies"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/orangeColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/orangeColor"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="3dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+                     <TextView
+                         android:id="@+id/tv_sliceFour_toppings"
+                         android:layout_width="match_parent"
+                         android:text="Beef ,Pepperoni"
+                         android:layout_height="wrap_content"
+                         android:textSize="12sp"
+                         android:textColor="@color/blackColor"
+                         android:orientation="vertical"/>
+                     <TextView
+                         android:id="@+id/tv_sliceFour_toppings_price"
+                         android:layout_width="match_parent"
+                         android:text="+Rs. 100"
+                         android:layout_height="wrap_content"
+                         android:textSize="12sp"
+                         android:visibility="gone"
+                         android:textColor="@color/orangeColor"
+                         android:orientation="vertical"/>
+                  </LinearLayout>
+
+                  <TextView
+                      android:id="@+id/tv_sliceFour_veggies"
+                      android:layout_width="0dp"
+                      android:layout_weight="1.7"
+                      android:text="Tomato,Onion, Capsicum, Black Olive,"
+                      android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="@color/blackColor"
+                      android:paddingStart="4dp"
+                      android:orientation="vertical"/>
+               </LinearLayout>
+
+
+            </LinearLayout>
+
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:id="@+id/ll_ext"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@+id/ll_extrass"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="2dp"
+             android:layout_marginStart="4dp"
+             android:paddingBottom="2dp"
+             android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Extras"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/blackColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_extras_name"
+                android:layout_height="wrap_content"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textSize="13sp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_extras_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rs. 30"
+                android:layout_marginEnd="0dp"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/blackColor" />
+         <LinearLayout
+             android:id="@id/ll_price"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="2dp"
+             android:layout_marginStart="4dp"
+             android:paddingBottom="2dp"
+             android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Pizza Total"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/orangeColor"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blackColor" />
+
+            <TextView
+                android:id="@+id/tv_pizza_price"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Rs."
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/orangeColor"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical"/>
+         </LinearLayout>
+      </LinearLayout>
+
+
+</LinearLayout>

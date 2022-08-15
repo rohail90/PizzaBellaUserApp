@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/red_border_shape"
+    android:padding="5dp"
+    android:layout_marginBottom="6dp"
+    android:gravity="center"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginTop="10dp">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="3"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/maven_pro_regular"
+          android:layout_marginStart="5dp"
+          android:padding="2dp"
+          android:id="@+id/orderDate"
+          android:text="08 September 2020-11:01 PM "
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textColor="@color/blackColor"
+          android:textSize="13sp" />
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/maven_pro_regular"
+             android:layout_marginStart="5dp"
+             android:padding="5dp"
+             android:text="Pending"
+             android:id="@+id/orderStatus"
+             android:background="@drawable/red_filled_shape"
+             android:textAlignment="center"
+             android:textAllCaps="false"
+             android:textColor="@color/whiteColor"
+             android:textSize="12sp" />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/maven_pro_regular"
+             android:layout_marginStart="0dp"
+             android:padding="5dp"
+             android:text="Rs. 655"
+             android:id="@+id/totalPrice"
+             android:textAlignment="textEnd"
+             android:textAllCaps="false"
+             android:textColor="@color/red"
+             android:textSize="12sp" />
+
+      </LinearLayout>
+   </LinearLayout>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/open_sans_regular"
+       android:layout_marginStart="5dp"
+       android:paddingStart="5dp"
+       android:paddingEnd="5dp"
+       android:text="Pizza"
+       android:layout_marginTop="3dp"
+       android:id="@+id/pizzaName"
+       android:textAllCaps="false"
+       android:textColor="@color/red"
+       android:textSize="12sp" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/open_sans_regular"
+       android:layout_marginStart="5dp"
+       android:paddingStart="5dp"
+       android:paddingEnd="5dp"
+       android:text=""
+       android:id="@+id/pizzaFlavours"
+       android:textAllCaps="false"
+       android:textColor="@color/blackColor"
+       android:textSize="12sp" />
+   <TextView
+       android:id="@+id/sideline_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/open_sans_regular"
+       android:layout_marginStart="5dp"
+       android:paddingStart="5dp"
+       android:paddingEnd="5dp"
+       android:text="Others"
+       android:layout_marginTop="5dp"
+       android:textAllCaps="false"
+       android:textColor="@color/red"
+       android:textSize="12sp" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/open_sans_regular"
+       android:layout_marginStart="5dp"
+       android:paddingStart="5dp"
+       android:paddingEnd="5dp"
+       android:text="sideline1, sideline2,sideline3"
+       android:id="@+id/sidelineFlavours"
+       android:textAllCaps="false"
+       android:textColor="@color/blackColor"
+       android:textSize="12sp" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/open_sans_extra_bold"
+       android:layout_margin="15dp"
+       android:padding="7dp"
+       android:text="REORDER"
+       android:background="@drawable/red_filled_shape"
+       android:textAlignment="center"
+       android:textAllCaps="false"
+       android:id="@+id/reOrderTV"
+       android:textColor="@color/whiteColor"
+       android:textSize="16sp" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/open_sans_extra_bold"
+       android:layout_margin="15dp"
+       android:padding="7dp"
+       android:visibility="gone"
+       android:text="DELETE ORDER"
+       android:background="@drawable/red_filled_shape"
+       android:textAlignment="center"
+       android:textAllCaps="false"
+       android:id="@+id/deleteTV"
+       android:textColor="@color/whiteColor"
+       android:textSize="16sp" />
+   <!--red_filled_shape-->
+</LinearLayout>

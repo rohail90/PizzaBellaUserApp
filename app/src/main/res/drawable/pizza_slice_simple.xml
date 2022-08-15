@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="135"
+            android:pivotX="68%"
+            android:pivotY="0%"
+            android:toDegrees="135"
+            >
+            <shape android:shape="rectangle">
+                <stroke
+                    android:width="2dp"
+                    android:color="@color/red"
+                    />
+                <solid android:color="#00FF00FF" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:width="100dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100" >
+    <group
+        android:name="triableGroup">
+        <path
+            android:name="triangle"
+            android:fillColor="#00050505"
+            android:pathData="m 50,0 l 50,100 -100,0 z" />
+    </group>
+</vector>

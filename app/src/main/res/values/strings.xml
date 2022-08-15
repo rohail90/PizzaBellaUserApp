@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Pizza Bella</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">494057364988566</string>
+    <string name="fb_login_protocol_scheme">fb494057364988566</string>
+    <string name="privacy_policy_url">https://pizzabellaislamabad.blogspot.com/2021/06/pizza-bella-privacy-policy.html</string>
+
+    <string name="thank_you_2">Have a nice day</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="default_notification_channel_id">123</string>
+    <string name="number">number</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="name">Name</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="email">Email</string>
+    <string name="message">Message</string>
+    <string name="change_selection">Change Selection</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="select_your_pizza_size">Select Your Pizza Size</string>
+    <string name="select_your_combo">Select Your Combo</string>
+    <string name="pending">Pending</string>
+    <string name="full">Full</string>
+    <string name="half1">Half1</string>
+    <string name="half2">Half2</string>
+
+    <string name="quarter1">Quarter1</string>
+    <string name="quarter2">Quarter2</string>
+    <string name="quarter3">Quarter3</string>
+    <string name="quarter4">Quarter4</string>
+    <string name="summer_special">Summer Special</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="online_payment">Online Payment</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
